@@ -14,3 +14,23 @@ A random number will be generated every 5 seconds.*/
 // 2) Create on and off buttons that will start and stop your application.
 
 
+function hero(){
+    var coin = Math.floor(Math.random()*(36-0+1))+0;
+    console.log(coin)
+    // var rou = document.createElement('div');
+    // rou.id = 'number';
+    // rou.innerHTML = token;
+    // document.body.appendChild(rou);
+    document.getElementById('t').innerHTML = coin;
+
+    
+    
+}
+hero();
+setInterval(hero,5000);
+
+
+// var rou = document.createElement('div');
+// rou.id = 'number';
+// rou.innerHTML = token;
+// document.body.appendChild(rou);
