@@ -12,36 +12,44 @@ A random number will be generated every 5 seconds.*/
 // Bonus
 // 1) Add some additional styling to your application.
 // 2) Create on and off buttons that will start and stop your application.
+// var myTime = setInterval(hero,1000);
 
 
+var what = document.getElementById('t')
 function hero(){
     var coin = Math.floor(Math.random()*(36-0+1))+0;
-    console.log(coin)
-    // var rou = document.createElement('div');
-    // rou.id = 'number';
-    // rou.innerHTML = token;
-    // document.body.appendChild(rou);
-    document.getElementById('t').innerHTML = coin;
 
-    
-    
-}
+     what.innerHTML = coin;
+     if(coin % 2 === 0){
+         what.style.backgroundColor = "black";
+     }
+     else if(coin % 2 === 1){
+        what.style.backgroundColor = "red";
+     }else if(coin === 0){
+        what.style.backgroundColor = "green"; 
+     }
+   }
 
 
-//  clearInterval(mojo);
 
-var on = document.getElementById('on');
-on.addEventListener('click',hero);
 
-setInterval(hero,1000);
 
-var off = document.getElementById('off');
-off.addEventListener('click',stopIt)
-function stopIt(){
-    console.log('n')
-}
+// var on = document.getElementById('on');
+// on.addEventListener('click',hero);
 
-// var rou = document.createElement('div');
-// rou.id = 'number';
-// rou.innerHTML = token;
-// document.body.appendChild(rou);
+
+
+
+// var off = document.getElementById('off');
+// off.addEventListener('click',stopIt)
+// function stopIt(){
+//     if(myTime = setInterval(hero,1000)){
+//     clearInterval(myTime);}
+// }
+
+// var what = document.getElementById('t');
+// function color(){
+//     if(coin % 2 === 0){
+//         what.style.color = 'blue';
+// }
+// }
