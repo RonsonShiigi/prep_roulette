@@ -26,9 +26,20 @@ function hero(){
     
     
 }
-hero();
-setInterval(hero,5000);
 
+
+//  clearInterval(mojo);
+
+var on = document.getElementById('on');
+on.addEventListener('click',hero);
+
+setInterval(hero,1000);
+
+var off = document.getElementById('off');
+off.addEventListener('click',stopIt)
+function stopIt(){
+    console.log('n')
+}
 
 // var rou = document.createElement('div');
 // rou.id = 'number';
